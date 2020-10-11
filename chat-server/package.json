@@ -1,0 +1,14 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "nodemon server.js"
+  },
+  "author": "Jatin Shukla",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  }
+}

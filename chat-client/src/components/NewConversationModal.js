@@ -34,14 +34,14 @@ export default function NewConversationModal({closeModal}) {
       <form onSubmit={handleSubmit} >
         <div className="modal-content">
           {contacts.map(contact => (
-            <>
+            <div key={contact.id}>
               <input 
                 type="checkbox"
                 name={contact.id}
                 onChange={() => handleCheckboxChange(contact.id)}
                 checked={selectedContacts.includes(contact.id)} 
               /> {contact.name} <br />
-            </>
+            </div>
           ))}
         </div>
         <div className="modal-action">
